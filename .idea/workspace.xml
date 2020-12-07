@@ -84,7 +84,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../wealth-management/mobile-backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
@@ -337,7 +337,7 @@
       <workItem from="1605379477298" duration="7362000" />
       <workItem from="1605463291541" duration="20458000" />
       <workItem from="1607185375134" duration="33241000" />
-      <workItem from="1607316175383" duration="240000" />
+      <workItem from="1607316175383" duration="526000" />
     </task>
     <servers />
   </component>
