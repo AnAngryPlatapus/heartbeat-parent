@@ -1,0 +1,4 @@
+com\sam\heartbeat\model\HeartbeatApp.class
+com\sam\heartbeat\model\Status.class
+com\sam\heartbeat\model\ParentApplication.class
+com\sam\heartbeat\model\Pulse.class
