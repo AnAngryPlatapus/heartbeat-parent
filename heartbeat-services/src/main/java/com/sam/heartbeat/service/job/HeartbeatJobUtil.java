@@ -28,7 +28,7 @@ public class HeartbeatJobUtil {
 
     public JobDetail buildJobDetail(HeartbeatApp heartbeatApp) {
         JobDataMap jobDataMap = new JobDataMap();
-        jobDataMap.put("scheduledApp", heartbeatApp.getId());
+        jobDataMap.put("appId", heartbeatApp.getId());
         return newJob(HeartbeatJob.class)
                 .withIdentity(heartbeatJobKey(heartbeatApp))
                 .usingJobData(jobDataMap)

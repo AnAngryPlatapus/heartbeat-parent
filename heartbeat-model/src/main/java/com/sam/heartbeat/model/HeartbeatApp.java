@@ -9,6 +9,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.sam.heartbeat.model.slack.Channel;
 import com.sam.heartbeat.model.type.Status;
 
 @Data
@@ -27,6 +28,21 @@ public class HeartbeatApp implements Serializable {
     @NonNull
     private String context;
     private Status status;
+
+    @NonNull //TODO think of a more clever data model
+    private String slackChannel;
+    private String channelId;
+    private String botId;
+    public boolean slackConfigured = Boolean.FALSE;
+
+    public HeartbeatApp configureSlack(Channel channel) {
+
+//        set
+        return this;
+    }
+
+ //   private static void configureSlack
+
 //    @DBRef
 //    private ParentApp parentApp;
 //    private List<Incident> incidents;

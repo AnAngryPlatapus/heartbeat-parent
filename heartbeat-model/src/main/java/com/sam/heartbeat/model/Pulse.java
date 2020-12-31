@@ -12,6 +12,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+
 @Data
 @Document
 @NoArgsConstructor
@@ -27,12 +28,16 @@ public class Pulse implements Serializable {
     private LocalDateTime pingDate;
     @NonNull
     private Long requestDuration;
+
+    @NonNull
+    private boolean stateChange;
+
     @DBRef
     @NonNull
     private HeartbeatApp heartbeatApp;
 
-    public static Pulse DEFAULT(HeartbeatApp heartbeatApp) {
-        return new Pulse(new HashMap<>(), LocalDateTime.now(), Long.MAX_VALUE, heartbeatApp);
+    public static Pulse DEFAULT_DOWN(HeartbeatApp app, boolean stateChange) {
+        return new Pulse(new HashMap<>(), LocalDateTime.now(), Long.MAX_VALUE, stateChange, app);
     }
 
 }

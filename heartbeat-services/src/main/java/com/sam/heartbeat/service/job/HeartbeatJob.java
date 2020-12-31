@@ -12,8 +12,9 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import com.sam.heartbeat.client.PulseClient;
-import com.sam.heartbeat.repository.HeartbeatAppRepository;
+import com.sam.heartbeat.model.Pulse;
 import com.sam.heartbeat.repository.PulseRepository;
+import com.sam.heartbeat.service.HeartbeatAppService;
 
 @Slf4j
 @Service
@@ -24,7 +25,7 @@ public class HeartbeatJob implements Job {
 
     private final PulseClient pulseClient;
     private final PulseRepository pulseRepository;
-    private final HeartbeatAppRepository heartbeatAppRepository;
+    private final HeartbeatAppService heartbeatAppService;
 
     @Override
     public void execute(JobExecutionContext jobExecutionContext) {
@@ -37,14 +38,18 @@ public class HeartbeatJob implements Job {
         }
     }
 
-    private void pulseHeartbeatApps(JobDataMap jobDataMap) {
-        String id = (String) jobDataMap.get("scheduledApp");
 
-        heartbeatAppRepository.findById(id)
+    private void pulseHeartbeatApps(JobDataMap jobDataMap) {
+        String id = (String) jobDataMap.get("appId");
+        heartbeatAppService.findById(id)
                 .switchIfEmpty(Mono.error(() -> new IllegalAccessException("No heartbeat app present for id: " + id)))
                 .flatMap(pulseClient::pulseHeartbeatApp)
-                .subscribe(pulse -> {
-                    pulseRepository.save(pulse).subscribe();
-                });
+                .flatMap(pulseRepository::save)
+                .filter(Pulse::isStateChange)
+                .map(Pulse::getHeartbeatApp)
+                .flatMap(heartbeatAppService::save)
+                .subscribe();
     }
+
+
 }
