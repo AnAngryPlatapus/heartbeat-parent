@@ -2,27 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6441391f-5207-4e9b-9b98-6314d72aea5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/AuthCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/Channel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/Conversation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/Metadata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/OAuthToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/RtmConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/Self.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/SocketMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/slack/TopicPurpose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/client/SlackClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/config/SlackConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/repository/AuthCodeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/repository/OAuthTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/service/SlackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/web/SlackResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/web/socket/SlackSocketHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heartbeat-web/src/components/Test.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../web-util/src/main/java/com/sam/webutil/heartbeat/RestConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../wealth-management/mobile-backend/src/main/java/com/sam/wealthmanagement/mobile/model/blog/BlogUser.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../wealth-management/mobile-backend/src/main/java/com/sam/wealthmanagement/mobile/model/blog/Post.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../wealth-management/mobile-backend/src/main/java/com/sam/wealthmanagement/mobile/repository/BlogUserRepository.java" afterDir="false" />
@@ -31,63 +10,6 @@
       <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/sam/scheduler/demo/config/SchedulerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/com/sam/scheduler/demo/config/SchedulerConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/sam/scheduler/demo/controller/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/com/sam/scheduler/demo/controller/ScheduleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/HeartbeatApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/HeartbeatApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/Pulse.java" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-model/src/main/java/com/sam/heartbeat/model/Pulse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-model/target/classes/com/sam/heartbeat/model/HeartbeatApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-model/target/classes/com/sam/heartbeat/model/HeartbeatApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-model/target/classes/com/sam/heartbeat/model/Pulse.class" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-model/target/classes/com/sam/heartbeat/model/Pulse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/client/PulseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/client/PulseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/repository/HeartbeatAppRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/repository/HeartbeatAppRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/service/HeartbeatAppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/service/HeartbeatAppService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/service/job/HeartbeatJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/service/job/HeartbeatJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/service/job/HeartbeatJobUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-services/src/main/java/com/sam/heartbeat/service/job/HeartbeatJobUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-services/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-services/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-services/src/main/resources/quartz.properties" beforeDir="false" afterPath="$PROJECT_DIR$/heartbeat-services/src/main/resources/quartz.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/heartbeat-web.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/node/node.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/node/npm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/node/npm.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/.graphqlconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/assets/spring-boot-vuejs-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/Admin/AppDetails.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/Admin/Apps.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/Admin/IssueDetails.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/Admin/Issues.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/Admin/Login.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/Admin/Menu.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/Admin/SignUp.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/App/AppServiceStack.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/Comment/SingleComment.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/components/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/graphql.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/schema.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/store/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/src/store/modules/Context.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/static/css/app.ab586865.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/static/img/logo.82b9c7a5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/static/js/about.148bea4e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/static/js/about.148bea4e.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/static/js/app.903a42eb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/static/js/app.903a42eb.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/static/js/chunk-vendors.85fc45a3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/target/dist/static/js/chunk-vendors.85fc45a3.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartbeat-web/vue.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-util/src/main/java/com/sam/webutil/heartbeat/MonitorClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-util/src/main/java/com/sam/webutil/heartbeat/HeartbeatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-util/src/main/java/com/sam/webutil/heartbeat/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-util/src/main/java/com/sam/webutil/heartbeat/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-util/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../web-util/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-util/src/main/resources/heartbeat.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../web-util/src/main/resources/heartbeat.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../wealth-management/mobile-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../wealth-management/mobile-backend/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../wealth-management/mobile-backend/src/main/java/com/sam/wealthmanagement/mobile/MobileApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../wealth-management/mobile-backend/src/main/java/com/sam/wealthmanagement/mobile/MobileApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../wealth-management/mobile-backend/src/main/java/com/sam/wealthmanagement/mobile/config/HeartbeatConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../wealth-management/mobile-backend/src/main/java/com/sam/wealthmanagement/mobile/config/HeartbeatConfig.java" afterDir="false" />
@@ -436,12 +358,24 @@
       <workItem from="1609099845735" duration="25127000" />
       <workItem from="1609175065621" duration="9906000" />
       <workItem from="1609269367581" duration="10389000" />
-      <workItem from="1609378728962" duration="4527000" />
+      <workItem from="1609378728962" duration="4870000" />
     </task>
+    <task id="LOCAL-00001" summary="initial help for agents-of-main-street">
+      <created>1609386082208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609386082208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial help for agents-of-main-street" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial help for agents-of-main-street" />
   </component>
   <component name="WindowStateProjectService">
     <state x="256" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607320873215">
@@ -472,6 +406,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="487" y="129" key="#frontend_//_run/0.0.1600.860@0.0.1600.860" timestamp="1607321110964" />
+    <state x="791" y="119" width="1460" height="1006" key="CommitChangelistDialog2" timestamp="1609386079859">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="791" y="119" width="1460" height="1006" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1609386079859" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1607200222105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
