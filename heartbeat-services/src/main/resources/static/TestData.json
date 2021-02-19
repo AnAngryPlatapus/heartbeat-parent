@@ -1,0 +1,49 @@
+{
+  "channel": "C01J7DN46Q1",
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "The Application Wealth Manager Mobile is Down. Please select and action below"
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "actions",
+      "elements": [
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "text": "Recent Logs",
+            "emoji": true
+          },
+          "value": "app-name"
+        },
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "text": "Scripts",
+            "emoji": true
+          },
+          "value": "app-name",
+          "url": "http://www.google.com"
+        },
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "text": "Case Details",
+            "emoji": true
+          },
+          "value": "click_me_123",
+          "url": "http://www.google.com"
+        }
+      ]
+    }
+  ]
+}

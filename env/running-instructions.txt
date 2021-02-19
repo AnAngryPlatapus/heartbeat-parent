@@ -1,0 +1,16 @@
+https://bytemares.com/mongodb/docker/2019/10/01/simple-mongodb-replica-set-with-docker.html
+
+
+commands
+1. docker volume create --name mongodb_repl_data1 -d local
+   docker volume create --name mongodb_repl_data2 -d local
+   docker volume create --name mongodb_repl_data3 -d local
+
+2. docker-compose.exe up -d
+3. docker exec -it mongo0 mongo --port 30000
+4. config={"_id":"rs0","members":[{"_id":0,"host":"mongo0:30000"},{"_id":1,"host":"mongo1:30001"},{"_id":2,"host":"mongo2:30002"}]}
+5. rs.initiate(config);
+
+check C:\Windows\System32\drivers\etc\hosts
+check that line: 127.0.0.1 mongo0 mongo1 mongo2 is there
+Check Connection with: mongodb://localhost:30000,localhost:30001,localhost:30002/?replicaSet=rs0

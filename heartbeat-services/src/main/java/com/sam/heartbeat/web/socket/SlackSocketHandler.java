@@ -1,6 +1,7 @@
 package com.sam.heartbeat.web.socket;
 
 import java.util.function.Consumer;
+import javax.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -9,26 +10,29 @@ import org.springframework.web.reactive.socket.WebSocketMessage;
 import org.springframework.web.reactive.socket.WebSocketSession;
 import reactor.core.publisher.Mono;
 
-import com.sam.heartbeat.model.slack.SocketMessage;
-import com.sam.heartbeat.model.type.Status;
 import com.sam.heartbeat.service.HeartbeatAppService;
+import com.sam.heartbeat.service.SlackService;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor
 public class SlackSocketHandler implements WebSocketHandler {
 
+    private final SlackService slackService;
     private final HeartbeatAppService heartbeatAppService;
+    private final Consumer<WebSocketMessage> loggingConsumer =
+            webSocketMessage -> log.info(webSocketMessage.getPayloadAsText());
 
-    private Consumer<WebSocketMessage> printingConsumer =
-            webSocketMessage -> System.out.println(webSocketMessage.getPayloadAsText());
+    @PostConstruct
+    public void init() {
+        heartbeatAppService.watchApps()
+                .flatMap(slackService::statusMessage)
+                .subscribe();
+    }
 
     @Override
     public Mono<Void> handle(WebSocketSession session) {
-        return session.send(heartbeatAppService.findAndWatchByStatus(Status.DOWN)
-                .map(SocketMessage::new)
-                .map(ssm -> session.textMessage(ssm.toJson())))
-                .and(session.receive().doOnNext(printingConsumer));
+        return session.receive().doOnNext(loggingConsumer).then();
     }
 
 }

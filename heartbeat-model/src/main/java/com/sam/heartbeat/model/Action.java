@@ -1,20 +1,25 @@
 package com.sam.heartbeat.model;
 
-import java.util.List;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import java.util.stream.Stream;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-@Data
-@Document
-@NoArgsConstructor
-public class Action {
+@Getter
+@AllArgsConstructor
+public enum Action {
+    LOGS("Recent Logs", true),
+    SCRIPTS("Quick Scripts", true),
+    CASE("Quick Scripts", true),
+    UNDEFINED("Undefined", false);
 
-    @Id
-    private String id;
-    private Integer order;
-    private String title;
-    private String description;
-    private List<Comment> comments;
+
+    private final String description;
+    private final boolean defaultAction;
+
+    public static Action of(String type) {
+        return Stream.of(Action.values())
+                .filter(t -> t.name().equals(type))
+                .findFirst()
+                .orElse(Action.UNDEFINED);
+    }
 }

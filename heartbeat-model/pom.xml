@@ -55,6 +55,11 @@
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-mongodb</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.slack.api</groupId>
+            <artifactId>slack-api-model</artifactId>
+            <version>${slack-api.version}</version>
+        </dependency>
     </dependencies>
 
 

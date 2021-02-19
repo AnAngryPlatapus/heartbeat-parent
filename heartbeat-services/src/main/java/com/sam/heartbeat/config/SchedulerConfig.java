@@ -20,7 +20,7 @@ public class SchedulerConfig {
     @Bean
     @SneakyThrows
     public SchedulerFactoryBean schedulerFactory(ApplicationContext applicationContext) {
-        SchedulerFactoryBean schedulerFactoryBean = new SchedulerFactoryBean();
+        var schedulerFactoryBean = new SchedulerFactoryBean();
         schedulerFactoryBean.setQuartzProperties(PropertiesLoaderUtils.loadProperties(quartzProperties));
         schedulerFactoryBean.setJobFactory(new JobBeanFactoryConfig(applicationContext.getAutowireCapableBeanFactory()));
         return schedulerFactoryBean;
@@ -28,7 +28,7 @@ public class SchedulerConfig {
 
     @Bean
     public Scheduler scheduler(ApplicationContext applicationContext) throws SchedulerException {
-        Scheduler scheduler = schedulerFactory(applicationContext).getScheduler();
+        var scheduler = schedulerFactory(applicationContext).getScheduler();
         scheduler.start();
         return scheduler;
     }

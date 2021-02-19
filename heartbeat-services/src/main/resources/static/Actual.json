@@ -1,0 +1,48 @@
+{
+  "channel": "C01J7DN46Q1",
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "The application Wealth Manager: Mobile-Backend is Down",
+        "emoji": false
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "actions",
+      "elements": [
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "text": "Recent Logs",
+            "emoji": true
+          },
+          "value": "LOGS"
+        },
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "text": "Quick Scripts",
+            "emoji": true
+          },
+          "value": "SCRIPTS"
+        },
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "text": "Case Details",
+            "emoji": true
+          },
+          "value": "CASE"
+        }
+      ]
+    }
+  ]
+}

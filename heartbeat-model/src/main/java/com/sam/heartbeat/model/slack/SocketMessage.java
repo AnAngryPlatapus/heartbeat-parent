@@ -18,6 +18,7 @@ public class SocketMessage {
 
     public SocketMessage(HeartbeatApp app) {
         setType("message");
+        setText("");
         setText(String.format("%s is %s", app.getName(), app.getStatus().getDisplayName()));
         setTs(Long.toString(LocalDateTime.now().toEpochSecond(OffsetDateTime.now().getOffset())));
         setUser(app.getBotId());

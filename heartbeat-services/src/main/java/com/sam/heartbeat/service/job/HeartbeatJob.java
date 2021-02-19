@@ -43,7 +43,7 @@ public class HeartbeatJob implements Job {
         String id = (String) jobDataMap.get("appId");
         heartbeatAppService.findById(id)
                 .switchIfEmpty(Mono.error(() -> new IllegalAccessException("No heartbeat app present for id: " + id)))
-                .flatMap(pulseClient::pulseHeartbeatApp)
+                .flatMap(pulseClient::pulseHeartApp)
                 .flatMap(pulseRepository::save)
                 .filter(Pulse::isStateChange)
                 .map(Pulse::getHeartbeatApp)

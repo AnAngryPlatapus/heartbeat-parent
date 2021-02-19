@@ -17,15 +17,19 @@
     </parent>
 
     <properties>
+        <bolt.version>1.5.2</bolt.version>
+        <slack-api.version>1.6.0</slack-api.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <jackson.version>2.10.3</jackson.version>
         <heartbeat-model.version>0.0.1-SNAPSHOT</heartbeat-model.version>
         <spqr.version>0.0.4</spqr.version>
+        <lombok.version>1.18.16</lombok.version>
         <frontend-maven-plugin.version>1.9.1</frontend-maven-plugin.version>
         <quartz-mongo.version>2.2.0-rc2</quartz-mongo.version>
         <data-mongo.version>3.1.1</data-mongo.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     </properties>
 
     <modules>
